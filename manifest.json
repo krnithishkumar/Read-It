@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+
+	"name": "Read It",
+	"description": "This extension narrates text on the page.",
+	"version": "1.0",
+	"background": {
+		"scripts": ["narrate.js", "background.js"]
+	},
+	"icons": { 
+		"128": "img/speak.png" 
+	},
+	"permissions": [
+		"contextMenus",
+		"tabs",
+		"tts",
+		"http://*/",
+		"https://*/"
+	],
+	"browser_action": {
+		"default_icon": "img/speak.png",
+		"default_popup": "popup.html"
+	}
+}
